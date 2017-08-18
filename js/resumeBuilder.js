@@ -178,7 +178,7 @@ education.display = function() {
     var formattedDates = HTMLschoolDates.replace("%data%", school.dates);
     var formattedschoolURL = HTMLschoolURL.replace("%data%", school.url);
     var formattedEducation = formattedName + formattedLocation + formattedDegree + formattedDates + formattedMajor + formattedschoolURL;
-    $(".education-entry:last").append(formattedEducation)
+    $(".education-entry:last").append(formattedEducation);
   });
   $("#education").append(HTMLonlineClasses);
   education.onlineCourses.forEach(function(onlineCourses) {
@@ -190,7 +190,7 @@ education.display = function() {
     var formattedonlineCourses = formattedTitle + formattedSchool + formattedonlineDates + formattedonlineURL;
     $(".education-entry:last").append(formattedonlineCourses);
   });
-}
+};
 // This code executes the bio.display and education.display functions.
 bio.display();
 education.display();
